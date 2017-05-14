@@ -14,6 +14,7 @@
 		7144E3F61EA30FD700F25EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7144E3F41EA30FD700F25EAC /* LaunchScreen.storyboard */; };
 		7144E4011EA30FD700F25EAC /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7144E4001EA30FD700F25EAC /* CalculatorTests.swift */; };
 		7144E40C1EA30FD700F25EAC /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7144E40B1EA30FD700F25EAC /* CalculatorUITests.swift */; };
+		715234071EBE6C0400F54E85 /* CalculatorMastermind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715234061EBE6C0400F54E85 /* CalculatorMastermind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7144E4071EA30FD700F25EAC /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7144E40B1EA30FD700F25EAC /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		7144E40D1EA30FD700F25EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		715234061EBE6C0400F54E85 /* CalculatorMastermind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorMastermind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,10 @@
 		7144E3EA1EA30FD700F25EAC /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				7144E3EB1EA30FD700F25EAC /* AppDelegate.swift */,
+				715234061EBE6C0400F54E85 /* CalculatorMastermind.swift */,
+				7144E4191EA3169C00F25EAC /* Supporting Files */,
 				7144E3ED1EA30FD700F25EAC /* ViewController.swift */,
 				7144E3EF1EA30FD700F25EAC /* Main.storyboard */,
-				7144E3F21EA30FD700F25EAC /* Assets.xcassets */,
-				7144E3F41EA30FD700F25EAC /* LaunchScreen.storyboard */,
-				7144E3F71EA30FD700F25EAC /* Info.plist */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -123,6 +123,17 @@
 				7144E40D1EA30FD700F25EAC /* Info.plist */,
 			);
 			path = CalculatorUITests;
+			sourceTree = "<group>";
+		};
+		7144E4191EA3169C00F25EAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7144E3EB1EA30FD700F25EAC /* AppDelegate.swift */,
+				7144E3F21EA30FD700F25EAC /* Assets.xcassets */,
+				7144E3F41EA30FD700F25EAC /* LaunchScreen.storyboard */,
+				7144E3F71EA30FD700F25EAC /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +204,7 @@
 				TargetAttributes = {
 					7144E3E71EA30FD700F25EAC = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 3S3TJ7SG4W;
 						ProvisioningStyle = Automatic;
 					};
 					7144E3FB1EA30FD700F25EAC = {
@@ -259,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715234071EBE6C0400F54E85 /* CalculatorMastermind.swift in Sources */,
 				7144E3EE1EA30FD700F25EAC /* ViewController.swift in Sources */,
 				7144E3EC1EA30FD700F25EAC /* AppDelegate.swift in Sources */,
 			);
@@ -414,10 +427,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3S3TJ7SG4W;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ege-Tanboga.Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -426,10 +442,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3S3TJ7SG4W;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ege-Tanboga.Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -507,6 +526,7 @@
 				7144E4121EA30FD700F25EAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7144E4131EA30FD700F25EAC /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +535,7 @@
 				7144E4151EA30FD700F25EAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7144E4161EA30FD700F25EAC /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +544,7 @@
 				7144E4181EA30FD700F25EAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
